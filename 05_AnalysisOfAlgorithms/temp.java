@@ -1,0 +1,26 @@
+public class temp {
+    
+    public static void main(String[] args){
+        
+        int[] emptyArray = new int[1];
+
+        sortIt(emptyArray);
+    }
+    
+
+    /**
+	 * Take an int[] and reorganize it so they are in ascending order.
+	 * @param array ints that need to be ordered 
+	 */
+	public static void sortIt(int[] array) {
+		for (int next = 1; next < array.length; next++) {
+			int value = array[next];
+			int index = next;
+			while (index > 0 && value < array[index - 1]) {
+				array[index] = array[index - 1];
+				index--;
+			}
+			array[index] = value;
+		}
+	}
+}
