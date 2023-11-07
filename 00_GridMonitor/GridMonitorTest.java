@@ -90,7 +90,7 @@ public class GridMonitorTest {
 			GridMonitor grid = null;
 			//if GridMonitor does not implement GridMonitorInterface, the following
 			// invalid assignment will prevent the test class from even compiling
-			GridMonitorInterface gridInterface = grid;
+			GridMonitor gridInterface = grid;
 		} catch (Exception e) {
 			e.printStackTrace(System.out);
 			success = false;
